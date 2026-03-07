@@ -146,7 +146,7 @@ minimap2 -ax map-ont reference.fasta reads.fastq > alignment.sam
 Clone the repository:
 
 ```
-git clone https://github.com/YOUR_USERNAME/longread_qc_pipeline.git
+git clone https://github.com/happymealinthebuilding/longread_qc_pipeline.git
 cd longread_qc_pipeline
 ```
 
