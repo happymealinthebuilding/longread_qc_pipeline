@@ -83,6 +83,8 @@ Using the computed metrics, the pipeline generates distribution plots for:
 
 ![GC Distribution](results/gc_distribution.png)
 
+_The GC content distribution shows a roughly bell-shaped curve centered around ~53% GC. Most reads fall between approximately 48% and 58% GC, indicating relatively consistent nucleotide composition across the dataset. Such a distribution is expected when sequencing reads originate from a single organism or a homogeneous biological sample. The absence of multiple peaks or strong skewness suggests there is likely no major contamination or GC bias introduced during sequencing._
+
 #### Read Length Distribution
 
 ![Read Length Distribution](results/read_length_distribution.png)
@@ -92,6 +94,8 @@ _The read length distribution is strongly right-skewed, with the majority of rea
 #### Quality Score Distribution
 
 ![Quality Distribution](results/quality_distribution.png)
+
+_The quality score distribution shows that most reads fall between approximately Q10 and Q30, with an average quality score of ~17.9. This range is typical for Oxford Nanopore long-read sequencing technologies, where quality scores are generally lower than those produced by short-read platforms such as Illumina. Despite this, the observed quality levels are generally sufficient for downstream analyses such as read alignment or assembly, especially when combined with the long read lengths produced by Nanopore sequencing._
 
 
 ---
