@@ -95,9 +95,6 @@ Pipeline DAG:
 
 ![DAG](dag.png)
 
-Rule graph:
-
-![Rulegraph](rulegraph.png)
 
 ---
 
