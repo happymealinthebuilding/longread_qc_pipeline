@@ -83,8 +83,11 @@ Output plots:
 
 ```
 results/gc_distribution.png
+! [gc_distribution](results/gc_distribution.png)
 results/read_length_distribution.png
+! [read_length_distribution](results/read_length_distribution.png)
 results/quality_distribution.png
+! [quality_distribution](results/quality_distribution.png)
 ```
 
 ---
