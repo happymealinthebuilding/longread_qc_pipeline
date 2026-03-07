@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Snakemake
+.snakemake/
+
+# Mac
+.DS_Store
+
+# Virtual environments
+venv/
+
+# Large raw data
+data/*.fastq.gz

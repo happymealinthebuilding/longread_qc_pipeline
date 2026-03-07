@@ -1,0 +1,49 @@
+configfile: "envs/config.yml"
+
+FASTQ = config["input_fastq"]
+OUTDIR = config["output_dir"]
+
+rule all:
+    input:
+        f"{OUTDIR}/nanoplot/NanoPlot-report.html",
+        f"{OUTDIR}/read_metrics.csv",
+        f"{OUTDIR}/gc_distribution.png",
+        f"{OUTDIR}/read_length_distribution.png",
+        f"{OUTDIR}/quality_distribution.png"
+
+
+rule nanoplot_qc:
+    input:
+        FASTQ
+    output:
+        f"{OUTDIR}/nanoplot/NanoPlot-report.html"
+    conda:
+        "../envs/qc_env.yml"
+    shell:
+        """
+        NanoPlot --fastq {input} --outdir {OUTDIR}/nanoplot
+        """
+
+
+rule calculate_metrics:
+    input:
+        FASTQ
+    output:
+        f"{OUTDIR}/read_metrics.csv"
+    conda:
+        "../envs/qc_env.yml"
+    script:
+        "../scripts/read_metrics.py"
+
+
+rule visualize:
+    input:
+        f"{OUTDIR}/read_metrics.csv"
+    output:
+        f"{OUTDIR}/gc_distribution.png",
+        f"{OUTDIR}/read_length_distribution.png",
+        f"{OUTDIR}/quality_distribution.png"
+    conda:
+        "../envs/qc_env.yml"
+    script:
+        "../scripts/visualize_metrics.py"
