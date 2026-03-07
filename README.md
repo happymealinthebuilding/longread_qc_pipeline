@@ -87,6 +87,8 @@ Using the computed metrics, the pipeline generates distribution plots for:
 
 ![Read Length Distribution](results/read_length_distribution.png)
 
+_The read length distribution is strongly right-skewed, with the majority of reads between ~100 and ~1000 bp. A small number of extremely long reads (up to ~686 kb) extend the tail of the distribution. This pattern is typical for long-read sequencing technologies such as Oxford Nanopore, where a small fraction of ultra-long reads significantly increases the maximum read length. Because the distribution is highly skewed, NanoPlot also generates log-transformed read length histograms to better visualize the majority of reads._
+
 #### Quality Score Distribution
 
 ![Quality Distribution](results/quality_distribution.png)
