@@ -75,19 +75,21 @@ read_1,206,54.8,20.6
 
 Using the computed metrics, the pipeline generates distribution plots for:
 
-* GC Content
-* Read Length
-* Mean Read Quality
+- GC Content
+- Read Length
+- Mean Read Quality
 
-Output plots:
+#### GC Content Distribution
 
+![GC Distribution](results/gc_distribution.png)
 
-results/gc_distribution.png
-! [gc_distribution](results/gc_distribution.png)
-results/read_length_distribution.png
-! [read_length_distribution](results/read_length_distribution.png)
-results/quality_distribution.png
-! [quality_distribution](results/quality_distribution.png)
+#### Read Length Distribution
+
+![Read Length Distribution](results/read_length_distribution.png)
+
+#### Quality Score Distribution
+
+![Quality Distribution](results/quality_distribution.png)
 
 
 ---
