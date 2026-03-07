@@ -111,6 +111,8 @@ The read length distribution is strongly right-skewed, with the majority of read
 <p align="center"><i>
 The quality score distribution shows that most reads fall between approximately Q10 and Q30, with an average quality score of ~17.9. This range is typical for Oxford Nanopore long-read sequencing technologies, where quality scores are generally lower than those produced by short-read platforms such as Illumina. Despite this, the observed quality levels are generally sufficient for downstream analyses such as read alignment or assembly, especially when combined with the long read lengths produced by Nanopore sequencing.
 </i></p>
+
+
 ---
 
 ## Workflow
