@@ -1,5 +1,7 @@
 # Long-Read Sequencing QC Pipeline
-
+![Snakemake](https://img.shields.io/badge/workflow-snakemake-blue)
+![Python](https://img.shields.io/badge/python-3.10-green)
+![License](https://img.shields.io/badge/license-MIT-orange)
 ## Overview
 
 This project implements a reproducible **bioinformatics pipeline** for performing **quality control (QC) on long-read sequencing data**.
